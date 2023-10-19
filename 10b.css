@@ -1,0 +1,25 @@
+/* External CSS styles */
+body {
+    background-image: url('background.gif');
+    background-size: cover; /* Adjusts the background size to cover the entire viewport */
+    background-repeat: no-repeat; /* Prevents background image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+h1, p {
+    text-align: center;
+    color: #fff; /* Text color on the background */
+    background-color: rgba(0, 0, 0, 0.5); /* Adds transparency to the text background */
+    padding: 10px;
+}
+
+h1 {
+    transition: font-size 1s; /* Adds a transition for font size change */
+}
+
+h1:hover {
+    font-size: 36px; /* Change font size on hover */
+}

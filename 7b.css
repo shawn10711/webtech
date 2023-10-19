@@ -1,0 +1,25 @@
+/* External CSS styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.float-box {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.blue {
+    background-color: #3498db;
+    float: left; /* Float the first box to the left */
+}
+
+.red {
+    background-color: #e74c3c;
+    float: left; /* Float the second box to the left */
+}

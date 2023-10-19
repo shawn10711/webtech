@@ -1,0 +1,24 @@
+/* External CSS styles */
+.heading {
+    text-align: center;
+    color: #3498db;
+}
+
+.section {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+.subheading {
+    color: #e74c3c;
+}
+
+.info {
+    font-size: 14px;
+}
+
+.services {
+    list-style-type: circle;
+}

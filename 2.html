@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nearest Odd Numbers</title>
+</head>
+<body>
+    <h1>Find Nearest Odd Numbers</h1>
+    <p>Enter numbers to find the nearest odd numbers:</p>
+
+    <input type="text" id="inputNumber">
+    <button onclick="findNearestOdd()">Find Nearest Odd</button>
+
+    <p>Nearest Odd Number: <span id="result"></span></p>
+
+    <script>
+        function findNearestOdd() {
+            const inputNumber = parseInt(document.getElementById("inputNumber").value);
+
+            if (!isNaN(inputNumber)) {
+                const nearestOdd = getNearestOdd(inputNumber);
+                document.getElementById("result").textContent = nearestOdd;
+            } else {
+                document.getElementById("result").textContent = "Please enter a valid number.";
+            }
+        }
+
+        function getNearestOdd(number) {
+            const floorOdd = Math.floor(number / 2) * 2 + 1; // Nearest odd number smaller than or equal to the input
+            const ceilOdd = Math.ceil(number / 2) * 2 - 1;   // Nearest odd number greater than or equal to the input
+
+            if (Math.abs(number - floorOdd) < Math.abs(number - ceilOdd)) {
+                return floorOdd;
+            } else {
+                return ceilOdd;
+            }
+        }
+    </script>
+</body>
+</html>

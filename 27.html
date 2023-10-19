@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Visitor Count</title>
+</head>
+<body>
+    <h1>Visitor Count</h1>
+    <p>
+        This website has been visited by <%
+            // Get the application (ServletContext) attribute for visitor count
+            javax.servlet.ServletContext application = getServletContext();
+            Integer count = (Integer) application.getAttribute("visitorCount");
+
+            // If the count is null, initialize it to 0
+            if (count == null) {
+                count = 0;
+            }
+
+            // Increment the visitor count
+            count++;
+
+            // Set the updated count in the application scope
+            application.setAttribute("visitorCount", count);
+
+            // Display the visitor count
+            out.print(count);
+        %> clients.
+    </p>
+</body>
+</html>

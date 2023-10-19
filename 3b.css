@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.parent {
+    background-color: #e0e0e0;
+    padding: 20px;
+    position: relative;
+}
+
+.child-relative-to-parent {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    top: 20px; /* Move 20px down relative to the parent */
+    left: 20px; /* Move 20px to the right relative to the parent */
+}
+
+.child-relative-to-self {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    top: 20px; /* Move 20px down relative to its default position */
+    left: 20px; /* Move 20px to the right relative to its default position */
+}
